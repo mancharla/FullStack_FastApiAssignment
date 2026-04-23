@@ -1,0 +1,49 @@
+2026-04-22 18:20:36,675 - INFO - Root endpoint called
+2026-04-22 18:21:11,050 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\Fastapirealproject\Python3-main\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-04-22 18:22:16,617 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\Fastapirealproject\Python3-main\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-04-23 11:34:02,260 - INFO - Root endpoint called
+2026-04-23 11:34:55,105 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\Fastapirealproject\Python3-main\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-04-23 11:38:29,828 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\Fastapirealproject\Python3-main\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-04-23 11:45:25,511 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\Fastapirealproject\Python3-main\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-04-23 11:46:13,462 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\Fastapirealproject\Python3-main\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-04-23 12:30:38,150 - INFO - Creating doctor: Devaka
+2026-04-23 12:39:59,165 - INFO - Creating doctor: Sandhya
+2026-04-23 12:40:34,589 - INFO - Fetching doctors list
+2026-04-23 12:44:10,270 - INFO - Fetching doctors list
+2026-04-23 12:45:02,636 - INFO - Doctor 2 active status: False
+2026-04-23 12:45:21,105 - INFO - Doctor 2 active status: True
+2026-04-23 13:06:40,873 - INFO - Creating doctor: Rakesh
+2026-04-23 13:07:24,819 - INFO - Creating patient: vikas
+2026-04-23 13:07:42,564 - INFO - Creating patient: raju
+2026-04-23 13:08:01,738 - INFO - Creating patient: rajesh
+2026-04-23 13:08:23,251 - INFO - Fetching patients list
