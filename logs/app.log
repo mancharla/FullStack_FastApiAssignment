@@ -47,3 +47,214 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2026-04-23 13:07:42,564 - INFO - Creating patient: raju
 2026-04-23 13:08:01,738 - INFO - Creating patient: rajesh
 2026-04-23 13:08:23,251 - INFO - Fetching patients list
+2026-04-23 13:45:39,745 - INFO - Creating doctor: sandhya
+2026-04-27 10:05:32,656 - INFO - Root endpoint called
+2026-04-27 10:07:12,441 - INFO - Fetching doctors list
+2026-04-27 10:07:13,069 - INFO - Fetching doctors list
+2026-04-27 10:07:13,679 - INFO - Fetching doctors list
+2026-04-27 10:07:14,273 - INFO - Fetching doctors list
+2026-04-27 10:07:14,857 - INFO - Fetching doctors list
+2026-04-27 10:07:15,523 - INFO - Fetching doctors list
+2026-04-27 10:07:16,144 - INFO - Fetching doctors list
+2026-04-27 10:07:16,842 - INFO - Fetching doctors list
+2026-04-27 10:07:17,501 - INFO - Fetching doctors list
+2026-04-27 10:07:18,324 - INFO - Fetching doctors list
+2026-04-27 10:07:19,046 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-04-27 10:07:19,792 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-04-27 10:14:08,627 - INFO - Root endpoint called
+2026-04-27 10:23:15,420 - INFO - Root endpoint called
+2026-04-27 10:25:15,378 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) insert or update on table "patient_files" violates foreign key constraint "patient_files_patient_id_fkey"
+DETAIL:  Key (patient_id)=(1) is not present in table "patients".
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': '42a8e571-ef5c-4774-b713-caed6484d3e2.png', 'original_name': 'Screenshot 2026-04-21 190705.png', 'file_type': 'png'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-04-27 10:31:56,908 - INFO - Creating patient: Rakesh
+2026-04-27 10:33:04,455 - INFO - Fetching patients list
+2026-04-27 10:41:17,370 - INFO - Root endpoint called
+2026-04-27 10:41:55,844 - INFO -    Doctor: sandhya
+2026-04-27 10:41:55,845 - INFO -    Patient: Rakesh
+2026-04-27 10:41:55,845 - INFO -    Date: 2026-04-27 05:11:37.272000+00:00
+2026-04-27 10:46:41,867 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-04-27 10:46:42,231 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-04-27 10:46:42,240 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:42,581 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-04-27 10:46:42,976 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:43,335 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 401 Unauthorized"
+2026-04-27 10:46:43,657 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-04-27 10:46:43,966 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:43,983 - INFO - Creating doctor: Dr. Test
+2026-04-27 10:46:43,995 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:44,006 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:44,327 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:44,333 - INFO - Fetching doctors list
+2026-04-27 10:46:44,338 - INFO - HTTP Request: GET http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:44,348 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:44,661 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:44,668 - INFO - Creating doctor: Dr. GetTest
+2026-04-27 10:46:44,677 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:44,688 - INFO - HTTP Request: GET http://testserver/doctors/2 "HTTP/1.1 200 OK"
+2026-04-27 10:46:44,705 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:45,026 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:45,050 - INFO - HTTP Request: GET http://testserver/doctors/99999 "HTTP/1.1 404 Not Found"
+2026-04-27 10:46:45,097 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:45,440 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:45,450 - INFO - Creating doctor: Dr. Update
+2026-04-27 10:46:45,459 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:45,489 - INFO - HTTP Request: PUT http://testserver/doctors/3 "HTTP/1.1 200 OK"
+2026-04-27 10:46:45,504 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:45,833 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:45,840 - INFO - Creating doctor: Dr. Delete
+2026-04-27 10:46:45,852 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:45,872 - INFO - HTTP Request: DELETE http://testserver/doctors/4 "HTTP/1.1 200 OK"
+2026-04-27 10:46:45,903 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:46,230 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:46,236 - INFO - Creating doctor: Dr. Activate
+2026-04-27 10:46:46,244 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:46,260 - INFO - Doctor 4 active status: False
+2026-04-27 10:46:46,262 - INFO - HTTP Request: PATCH http://testserver/doctors/4/activate "HTTP/1.1 200 OK"
+2026-04-27 10:46:46,291 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:46,612 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:46,618 - INFO - Creating patient: Test Patient
+2026-04-27 10:46:46,629 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:46,646 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:46,963 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:46,971 - INFO - Fetching patients list
+2026-04-27 10:46:46,975 - INFO - HTTP Request: GET http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:46,986 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:47,302 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:47,312 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 422 Unprocessable Entity"
+2026-04-27 10:46:47,324 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:47,683 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:47,691 - INFO - Creating patient: Update Patient
+2026-04-27 10:46:47,701 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:47,723 - INFO - HTTP Request: PUT http://testserver/patients/2 "HTTP/1.1 200 OK"
+2026-04-27 10:46:47,757 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:48,089 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:48,093 - INFO - Creating patient: Delete Patient
+2026-04-27 10:46:48,102 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:48,115 - INFO - HTTP Request: DELETE http://testserver/patients/3 "HTTP/1.1 200 OK"
+2026-04-27 10:46:48,128 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-04-27 10:46:48,463 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-04-27 10:46:48,467 - INFO - Creating patient: SearchName
+2026-04-27 10:46:48,513 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-04-27 10:46:48,518 - INFO - Fetching patients list
+2026-04-27 10:46:48,522 - INFO - HTTP Request: GET http://testserver/patients/?name=SearchName "HTTP/1.1 200 OK"
+2026-04-27 11:08:56,190 - INFO - Root endpoint called
+2026-04-27 11:56:38,291 - INFO - Root endpoint called
+2026-04-27 11:58:10,517 - INFO - Fetching doctors list
+2026-04-27 11:58:10,552 - INFO - Fetching doctors list
+2026-04-27 11:58:24,533 - INFO - Fetching patients list
+2026-04-27 11:58:24,560 - INFO - Fetching patients list
+2026-04-27 11:58:28,452 - INFO - Fetching patients list
+2026-04-27 11:58:28,462 - INFO - Fetching patients list
+2026-04-27 11:58:30,028 - INFO - Fetching doctors list
+2026-04-27 11:58:30,035 - INFO - Fetching doctors list
+2026-04-27 11:58:40,558 - INFO - Fetching patients list
+2026-04-27 11:58:40,565 - INFO - Fetching patients list
+2026-04-27 12:00:23,066 - INFO - Fetching patients list
+2026-04-27 12:00:23,075 - INFO - Fetching patients list
+2026-04-27 12:00:38,412 - INFO - Fetching doctors list
+2026-04-27 12:00:38,422 - INFO - Fetching doctors list
+2026-04-27 12:01:26,770 - INFO - Fetching patients list
+2026-04-27 12:01:26,777 - INFO - Fetching patients list
+2026-04-27 12:01:55,023 - INFO - Creating patient: anil
+2026-04-27 12:01:55,052 - INFO - Fetching patients list
+2026-04-27 12:05:51,097 - INFO - Fetching doctors list
+2026-04-27 12:05:51,105 - INFO - Fetching doctors list
+2026-04-27 12:05:59,485 - INFO - Fetching doctors list
+2026-04-27 12:05:59,493 - INFO - Fetching doctors list
+2026-04-27 12:06:06,465 - INFO - Fetching patients list
+2026-04-27 12:06:06,478 - INFO - Fetching patients list
+2026-04-27 12:23:52,426 - INFO - Root endpoint called
+2026-04-27 12:36:14,247 - INFO - Root endpoint called
+2026-04-27 12:38:21,387 - INFO - Fetching doctors list
+2026-04-27 12:38:21,401 - INFO - Fetching doctors list
+2026-04-27 12:38:31,423 - INFO - Fetching doctors list
+2026-04-27 12:38:31,431 - INFO - Fetching doctors list
+2026-04-27 12:39:31,910 - INFO - Fetching patients list
+2026-04-27 12:39:31,922 - INFO - Fetching patients list
+2026-04-27 12:39:52,580 - INFO - Creating patient: nithin 
+2026-04-27 12:39:52,612 - INFO - Fetching patients list
+2026-04-27 12:40:19,743 - INFO -    Doctor: sandhya
+2026-04-27 12:40:19,743 - INFO -    Patient: anil
+2026-04-27 12:40:19,743 - INFO -    Date: 2026-04-30 07:10:00+00:00
+2026-04-27 12:40:25,407 - INFO - Fetching doctors list
+2026-04-27 12:40:25,420 - INFO - Fetching doctors list
+2026-04-27 12:42:04,758 - INFO - Fetching patients list
+2026-04-27 12:42:04,774 - INFO - Fetching patients list
+2026-04-27 12:42:07,441 - INFO - Fetching patients list
+2026-04-27 12:43:19,334 - INFO - Fetching doctors list
+2026-04-27 12:43:19,344 - INFO - Fetching doctors list
+2026-04-27 12:43:21,075 - INFO - Fetching patients list
+2026-04-27 12:43:21,080 - INFO - Fetching patients list
+2026-04-27 12:43:43,601 - INFO - Fetching doctors list
+2026-04-27 12:43:43,614 - INFO - Fetching doctors list
+2026-04-27 12:43:47,759 - INFO - Doctor 1 active status: False
+2026-04-27 12:43:47,766 - INFO - Fetching doctors list
+2026-04-27 12:43:49,294 - INFO - Doctor 1 active status: True
+2026-04-27 12:43:49,300 - INFO - Fetching doctors list
+2026-04-27 12:44:27,833 - INFO - Creating doctor: rakesh
+2026-04-27 12:44:27,848 - INFO - Fetching doctors list
+2026-04-27 14:53:05,858 - INFO - Root endpoint called
+2026-04-27 14:54:37,558 - INFO - Fetching doctors list
+2026-04-27 14:54:37,576 - INFO - Fetching doctors list
+2026-04-27 15:03:20,125 - INFO - Root endpoint called
+2026-04-27 15:07:48,333 - INFO - Root endpoint called
+2026-04-27 15:11:32,352 - INFO - Root endpoint called
+2026-04-27 15:13:34,289 - INFO - Fetching doctors list
+2026-04-27 15:13:34,299 - INFO - Fetching doctors list
+2026-04-27 15:16:47,477 - INFO - Fetching doctors list
+2026-04-27 15:16:47,486 - INFO - Fetching doctors list
+2026-04-27 15:17:35,350 - INFO - Creating doctor: ramya
+2026-04-27 15:17:35,387 - INFO - Fetching doctors list
+2026-04-27 15:17:37,127 - INFO - Fetching patients list
+2026-04-27 15:17:37,144 - INFO - Fetching patients list
+2026-04-27 15:17:55,758 - INFO - Creating patient: raju
+2026-04-27 15:17:55,769 - INFO - Fetching patients list
+2026-04-27 15:18:14,489 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:14,667 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:14,870 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:15,089 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:28,733 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:36,738 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:37,411 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:37,598 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:37,845 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:38,069 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:38,296 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:41,164 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:41,362 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:41,590 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:46,002 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:47,421 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:47,625 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:47,848 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:50,368 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:50,599 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:50,821 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:55,684 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:56,917 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:57,083 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:57,289 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:18:57,510 - WARNING - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-04-27 15:21:04,550 - INFO -    Doctor: ramya
+2026-04-27 15:21:04,550 - INFO -    Patient: raju
+2026-04-27 15:21:04,551 - INFO -    Date: 2026-04-29 09:48:00+00:00
+2026-04-27 15:24:08,434 - INFO - Fetching doctors list
+2026-04-27 15:24:08,442 - INFO - Fetching doctors list
+2026-04-27 15:25:07,430 - INFO -    Doctor: sandhya
+2026-04-27 15:25:07,431 - INFO -    Patient: raju
+2026-04-27 15:25:07,432 - INFO -    Date: 2026-04-28 09:55:00+00:00
+2026-04-27 15:26:12,145 - INFO - Fetching patients list
+2026-04-27 15:26:12,158 - INFO - Fetching patients list
+2026-04-27 15:26:14,933 - INFO - Fetching doctors list
+2026-04-27 15:26:14,939 - INFO - Fetching doctors list
+2026-04-27 15:30:24,175 - INFO - Fetching doctors list
+2026-04-27 15:30:24,183 - INFO - Fetching doctors list
+2026-04-27 15:30:48,917 - INFO - Fetching patients list
+2026-04-27 15:30:48,923 - INFO - Fetching patients list
+2026-04-27 15:31:19,675 - INFO - Fetching doctors list
+2026-04-27 15:31:19,684 - INFO - Fetching doctors list
+2026-04-27 15:31:21,590 - INFO - Fetching patients list
+2026-04-27 15:31:21,596 - INFO - Fetching patients list
