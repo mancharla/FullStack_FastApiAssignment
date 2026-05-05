@@ -15,8 +15,7 @@ from app.models import file as file_model
 from app.logger import logger
 from app.rate_limit import limiter
 import traceback
-from app.routers import websocket as ws_router 
-# ✅ Create all tables
+
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
@@ -24,13 +23,20 @@ app = FastAPI(
     description="Advanced FastAPI Assignment - End to End",
     version="1.0.0"
 )
-app.include_router(ws_router.router) 
-# ✅ CORS Middleware — allows React to talk to FastAPI
+
+# ✅ CORS — Must be added FIRST before any routes
+origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ← Allow all origins for testing
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -80,7 +86,9 @@ def custom_openapi():
             "bearerFormat": "JWT",
         }
     }
-    openapi_schema["security"] = [{"BearerAuth": []}]
+    for path in openapi_schema["paths"].values():
+        for method in path.values():
+            method["security"] = [{"BearerAuth": []}]
     app.openapi_schema = openapi_schema
     return app.openapi_schema
 

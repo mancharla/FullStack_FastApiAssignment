@@ -61,12 +61,13 @@ export default function Appointments() {
   const fetchAppointments = async () => {
     try {
       const response = await API.get('/appointments/');
-      setAppointments(response.data);
+      const data = response.data.data || response.data;
+      setAppointments(Array.isArray(data) ? data : []);
     } catch (err) {
       console.log('Error fetching appointments:', err);
+      setAppointments([]);
     }
   };
-
   const handleCreate = async (e) => {
     e.preventDefault();
 

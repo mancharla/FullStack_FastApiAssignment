@@ -4,8 +4,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from app.main import app
 from app.database import Base, get_db
+from unittest.mock import patch
 
-# ✅ Use separate test database
 TEST_DATABASE_URL = "sqlite:///./test_temp.db"
 
 engine = create_engine(
@@ -19,10 +19,6 @@ TestingSessionLocal = sessionmaker(
     bind=engine
 )
 
-# ✅ Create test tables
-Base.metadata.create_all(bind=engine)
-
-# ✅ Override DB dependency
 def override_get_db():
     db = TestingSessionLocal()
     try:
@@ -32,23 +28,53 @@ def override_get_db():
 
 app.dependency_overrides[get_db] = override_get_db
 
-# ✅ Test client
-@pytest.fixture
+@pytest.fixture(scope="function")
 def client():
-    return TestClient(app)
+    Base.metadata.drop_all(bind=engine)
+    Base.metadata.create_all(bind=engine)
+    # ✅ Disable rate limiting for tests
+    with patch("app.rate_limit.limiter.enabled", False):
+        with TestClient(app) as c:
+            yield c
 
-# ✅ Auth token fixture
-@pytest.fixture
-def auth_token(client):
-    # Register
+@pytest.fixture(scope="function")
+def admin_token(client):
     client.post("/auth/register", json={
-        "username": "testuser",
-        "password": "testpass123"
+        "username": "testadmin",
+        "password": "testpass123",
+        "role": "admin"
     })
-    # Login
     response = client.post("/auth/login", json={
-        "username": "testuser",
+        "username": "testadmin",
         "password": "testpass123"
     })
-    token = response.json()["access_token"]
+    token = response.json().get("access_token")
+    return {"Authorization": f"Bearer {token}"}
+
+@pytest.fixture(scope="function")
+def doctor_token(client):
+    client.post("/auth/register", json={
+        "username": "testdoctor",
+        "password": "testpass123",
+        "role": "doctor"
+    })
+    response = client.post("/auth/login", json={
+        "username": "testdoctor",
+        "password": "testpass123"
+    })
+    token = response.json().get("access_token")
+    return {"Authorization": f"Bearer {token}"}
+
+@pytest.fixture(scope="function")
+def patient_token(client):
+    client.post("/auth/register", json={
+        "username": "testpatient",
+        "password": "testpass123",
+        "role": "patient"
+    })
+    response = client.post("/auth/login", json={
+        "username": "testpatient",
+        "password": "testpass123"
+    })
+    token = response.json().get("access_token")
     return {"Authorization": f"Bearer {token}"}

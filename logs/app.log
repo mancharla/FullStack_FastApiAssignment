@@ -258,3 +258,1058 @@ DETAIL:  Key (patient_id)=(1) is not present in table "patients".
 2026-04-27 15:31:19,684 - INFO - Fetching doctors list
 2026-04-27 15:31:21,590 - INFO - Fetching patients list
 2026-04-27 15:31:21,596 - INFO - Fetching patients list
+2026-04-27 15:50:25,466 - INFO - Root endpoint called
+2026-04-27 15:50:34,515 - INFO - Fetching doctors list
+2026-04-27 15:50:34,528 - INFO - Fetching doctors list
+2026-04-27 15:50:51,637 - INFO - Fetching patients list
+2026-04-27 15:50:51,653 - INFO - Fetching patients list
+2026-04-27 15:51:14,603 - INFO -    Doctor: sandhya
+2026-04-27 15:51:14,608 - INFO -    Patient: raju
+2026-04-27 15:51:14,613 - INFO -    Date: 2026-04-28 10:21:00+00:00
+2026-04-27 15:51:41,708 - INFO - Fetching patients list
+2026-04-27 15:51:41,723 - INFO - Fetching patients list
+2026-04-27 15:51:43,331 - INFO - Fetching doctors list
+2026-04-27 15:51:43,340 - INFO - Fetching doctors list
+2026-05-04 09:33:40,301 - INFO - Root endpoint called
+2026-05-04 09:36:11,028 - INFO - Fetching doctors list
+2026-05-04 09:36:11,083 - INFO - Fetching doctors list
+2026-05-04 09:48:59,109 - INFO - Root endpoint called
+2026-05-04 09:49:38,793 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:49:38,836 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:51:58,323 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:51:58,336 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:51:58,532 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:51:58,542 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:51:59,423 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:51:59,450 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:00,567 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:00,575 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:01,372 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:01,391 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:01,609 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:01,621 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:01,814 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:01,832 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:02,008 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:02,037 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:02,238 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:02,247 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:02,432 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:02,443 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:02,619 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:02,625 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:03,045 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 09:52:03,073 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 10:01:52,487 - INFO - Root endpoint called
+2026-05-04 10:01:58,788 - INFO - Root endpoint called
+2026-05-04 10:03:37,692 - ERROR - Unexpected error: 'UserCreate' object has no attribute 'role'
+2026-05-04 10:04:07,545 - ERROR - Unexpected error: 'UserCreate' object has no attribute 'role'
+2026-05-04 10:06:42,723 - INFO - Root endpoint called
+2026-05-04 10:14:26,782 - INFO - Root endpoint called
+2026-05-04 10:23:47,115 - INFO - Root endpoint called
+2026-05-04 10:33:07,890 - INFO - Root endpoint called
+2026-05-04 10:38:02,900 - INFO - Root endpoint called
+2026-05-04 10:48:40,612 - INFO - Root endpoint called
+2026-05-04 10:57:33,363 - INFO - Root endpoint called
+2026-05-04 11:23:57,070 - INFO - Root endpoint called
+2026-05-04 11:26:46,939 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 11:26:46,952 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 11:27:13,979 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 11:27:13,991 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 11:27:17,986 - INFO - Fetching patients list
+2026-05-04 11:27:18,019 - INFO - Fetching patients list
+2026-05-04 11:27:30,302 - INFO - Fetching patients list
+2026-05-04 11:27:30,321 - INFO - Fetching patients list
+2026-05-04 11:28:00,470 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 11:28:00,482 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /doctors/
+2026-05-04 11:33:01,400 - INFO - Fetching patients list
+2026-05-04 11:33:01,432 - INFO - Fetching patients list
+2026-05-04 11:33:11,348 - INFO - Fetching patients list
+2026-05-04 11:33:11,361 - INFO - Fetching patients list
+2026-05-04 11:33:18,909 - INFO - Fetching patients list
+2026-05-04 11:33:18,924 - INFO - Fetching patients list
+2026-05-04 12:27:03,652 - INFO - Fetching patients list
+2026-05-04 12:27:03,715 - INFO - Fetching patients list
+2026-05-04 12:30:06,922 - INFO - Fetching patients list
+2026-05-04 12:30:06,953 - INFO - Fetching patients list
+2026-05-04 13:20:03,907 - INFO - Root endpoint called
+2026-05-04 14:19:41,983 - INFO - Root endpoint called
+2026-05-04 14:19:54,038 - INFO - Root endpoint called
+2026-05-04 14:20:14,648 - INFO - Root endpoint called
+2026-05-04 14:20:30,964 - INFO - Root endpoint called
+2026-05-04 14:20:45,166 - INFO - Root endpoint called
+2026-05-04 14:21:38,645 - INFO - Root endpoint called
+2026-05-04 14:41:36,904 - INFO - Root endpoint called
+2026-05-04 14:47:07,376 - INFO -    Doctor: Doctor ID 1
+2026-05-04 14:47:07,377 - INFO -    Patient: Patient ID 1
+2026-05-04 14:47:07,377 - INFO -    Date: 2026-06-01 10:00:00
+2026-05-04 14:49:31,562 - INFO - Root endpoint called
+2026-05-04 14:49:38,396 - INFO - Root endpoint called
+2026-05-04 14:54:41,874 - ERROR - Unexpected error: can't compare offset-naive and offset-aware datetimes
+2026-05-04 14:54:59,022 - ERROR - Unexpected error: can't compare offset-naive and offset-aware datetimes
+2026-05-04 14:56:33,395 - INFO - Root endpoint called
+2026-05-04 14:56:48,994 - INFO - Root endpoint called
+2026-05-04 14:56:58,146 - INFO - Root endpoint called
+2026-05-04 15:00:29,614 - INFO - Root endpoint called
+2026-05-04 15:00:32,975 - INFO - Root endpoint called
+2026-05-04 15:04:03,987 - INFO -    Doctor: Doctor ID 1
+2026-05-04 15:04:03,987 - INFO -    Patient: Patient ID 1
+2026-05-04 15:04:03,988 - INFO -    Date: 2026-12-01 10:00:00
+2026-05-04 15:12:45,000 - INFO - Fetching patients list
+2026-05-04 15:12:45,168 - INFO - Fetching patients list
+2026-05-04 15:19:37,100 - INFO - Fetching patients list
+2026-05-04 15:19:37,197 - INFO - Fetching patients list
+2026-05-04 15:19:41,833 - INFO - Fetching patients list
+2026-05-04 15:19:41,838 - INFO - Fetching patients list
+2026-05-04 15:19:52,239 - INFO - Fetching patients list
+2026-05-04 15:19:52,246 - INFO - Fetching patients list
+2026-05-04 15:19:56,297 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column patient_files.file_size does not exist
+LINE 1: ...tient_files.file_type AS patient_files_file_type, patient_fi...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "patient_files.file_type".
+
+[SQL: SELECT patient_files.id AS patient_files_id, patient_files.patient_id AS patient_files_patient_id, patient_files.filename AS patient_files_filename, patient_files.original_name AS patient_files_original_name, patient_files.file_type AS patient_files_file_type, patient_files.file_size AS patient_files_file_size, patient_files.file_category AS patient_files_file_category, patient_files.uploaded_at AS patient_files_uploaded_at, patient_files.uploaded_by AS patient_files_uploaded_by 
+FROM patient_files 
+WHERE patient_files.patient_id = %(patient_id_1)s]
+[parameters: {'patient_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-04 15:20:57,128 - INFO - Fetching patients list
+2026-05-04 15:20:57,139 - INFO - Fetching patients list
+2026-05-04 15:23:45,103 - INFO - Fetching patients list
+2026-05-04 15:28:23,022 - INFO - Fetching patients list
+2026-05-04 15:28:23,029 - INFO - Fetching patients list
+2026-05-04 15:28:28,380 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column patient_files.file_size does not exist
+LINE 1: ...tient_files.file_type AS patient_files_file_type, patient_fi...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "patient_files.file_type".
+
+[SQL: SELECT patient_files.id AS patient_files_id, patient_files.patient_id AS patient_files_patient_id, patient_files.filename AS patient_files_filename, patient_files.original_name AS patient_files_original_name, patient_files.file_type AS patient_files_file_type, patient_files.file_size AS patient_files_file_size, patient_files.file_category AS patient_files_file_category, patient_files.uploaded_at AS patient_files_uploaded_at, patient_files.uploaded_by AS patient_files_uploaded_by 
+FROM patient_files 
+WHERE patient_files.patient_id = %(patient_id_1)s]
+[parameters: {'patient_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-04 15:28:45,092 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': '0c861861-a2c5-49f0-a2c3-72f319584fd5.png', 'original_name': 'Screenshot (1).png', 'file_type': 'png', 'file_size': 101.57, 'file_category': 'prescription', 'uploaded_at': datetime.datetime(2026, 5, 4, 9, 58, 45, 81039), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-04 15:28:53,463 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': '8e03dc2e-b2cc-4b79-b882-7556f0590986.png', 'original_name': 'Screenshot (1).png', 'file_type': 'png', 'file_size': 101.57, 'file_category': 'prescription', 'uploaded_at': datetime.datetime(2026, 5, 4, 9, 58, 53, 462040), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-04 15:29:08,993 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': 'a79e76cd-1d6e-4ffc-b88d-1a80ba2d066e.png', 'original_name': 'Screenshot (27).png', 'file_type': 'png', 'file_size': 467.22, 'file_category': 'prescription', 'uploaded_at': datetime.datetime(2026, 5, 4, 9, 59, 8, 991961), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-04 15:29:17,357 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column patient_files.file_size does not exist
+LINE 1: ...tient_files.file_type AS patient_files_file_type, patient_fi...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "patient_files.file_type".
+
+[SQL: SELECT patient_files.id AS patient_files_id, patient_files.patient_id AS patient_files_patient_id, patient_files.filename AS patient_files_filename, patient_files.original_name AS patient_files_original_name, patient_files.file_type AS patient_files_file_type, patient_files.file_size AS patient_files_file_size, patient_files.file_category AS patient_files_file_category, patient_files.uploaded_at AS patient_files_uploaded_at, patient_files.uploaded_by AS patient_files_uploaded_by 
+FROM patient_files 
+WHERE patient_files.patient_id = %(patient_id_1)s AND patient_files.file_category = %(file_category_1)s]
+[parameters: {'patient_id_1': 1, 'file_category_1': 'prescription'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-04 15:29:19,282 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': '37cdcff4-0466-414d-ae65-96fda8435ed2.png', 'original_name': 'Screenshot (27).png', 'file_type': 'png', 'file_size': 467.22, 'file_category': 'prescription', 'uploaded_at': datetime.datetime(2026, 5, 4, 9, 59, 19, 280431), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-04 15:29:34,857 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': '8ffc696a-be88-4236-8018-590e884e4dd0.png', 'original_name': 'Screenshot 2026-04-28 125455.png', 'file_type': 'png', 'file_size': 165.86, 'file_category': 'prescription', 'uploaded_at': datetime.datetime(2026, 5, 4, 9, 59, 34, 856395), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-04 15:29:49,430 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:29:51,079 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:29:52,231 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:29:52,828 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:29:53,056 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:29:58,647 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:29:59,919 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:30:05,837 - INFO - Fetching patients list
+2026-05-04 15:30:05,853 - INFO - Fetching patients list
+2026-05-04 15:30:35,722 - INFO - Creating patient: sreevani
+2026-05-04 15:30:35,786 - INFO - Fetching patients list
+2026-05-04 15:30:40,048 - INFO - Fetching patients list
+2026-05-04 15:30:46,182 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:30:47,389 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:31:25,706 - INFO - Fetching patients list
+2026-05-04 15:31:25,715 - INFO - Fetching patients list
+2026-05-04 15:31:29,377 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:31:30,721 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:31:36,875 - ERROR - Unexpected error: (psycopg2.errors.ForeignKeyViolation) update or delete on table "patients" violates foreign key constraint "patient_files_patient_id_fkey" on table "patient_files"
+DETAIL:  Key (id)=(1) is still referenced from table "patient_files".
+
+[SQL: DELETE FROM patients WHERE patients.id = %(id)s]
+[parameters: {'id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-04 15:35:11,269 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column patient_files.file_size does not exist
+LINE 1: ...tient_files.file_type AS patient_files_file_type, patient_fi...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "patient_files.file_type".
+
+[SQL: SELECT patient_files.id AS patient_files_id, patient_files.patient_id AS patient_files_patient_id, patient_files.filename AS patient_files_filename, patient_files.original_name AS patient_files_original_name, patient_files.file_type AS patient_files_file_type, patient_files.file_size AS patient_files_file_size, patient_files.file_category AS patient_files_file_category, patient_files.uploaded_at AS patient_files_uploaded_at, patient_files.uploaded_by AS patient_files_uploaded_by 
+FROM patient_files 
+WHERE patient_files.patient_id = %(patient_id_1)s]
+[parameters: {'patient_id_1': 2}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-04 15:35:22,720 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 2, 'filename': '89bda00d-060b-470c-9714-a39fd2671ee9.png', 'original_name': 'Screenshot (6).png', 'file_type': 'png', 'file_size': 440.05, 'file_category': 'prescription', 'uploaded_at': datetime.datetime(2026, 5, 4, 10, 5, 22, 719176), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 07:51:28,243 - INFO - Fetching patients list
+2026-05-05 07:51:28,317 - INFO - Fetching patients list
+2026-05-05 07:52:20,047 - INFO - Root endpoint called
+2026-05-05 07:52:28,063 - INFO - Root endpoint called
+2026-05-05 07:54:05,676 - INFO - Fetching patients list
+2026-05-05 07:54:05,705 - INFO - Fetching patients list
+2026-05-05 07:54:09,047 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column patient_files.file_size does not exist
+LINE 1: ...tient_files.file_type AS patient_files_file_type, patient_fi...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "patient_files.file_type".
+
+[SQL: SELECT patient_files.id AS patient_files_id, patient_files.patient_id AS patient_files_patient_id, patient_files.filename AS patient_files_filename, patient_files.original_name AS patient_files_original_name, patient_files.file_type AS patient_files_file_type, patient_files.file_size AS patient_files_file_size, patient_files.file_category AS patient_files_file_category, patient_files.uploaded_at AS patient_files_uploaded_at, patient_files.uploaded_by AS patient_files_uploaded_by 
+FROM patient_files 
+WHERE patient_files.patient_id = %(patient_id_1)s]
+[parameters: {'patient_id_1': 2}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 07:54:17,832 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 2, 'filename': '3f520368-88c3-4080-96ef-3983f625343f.png', 'original_name': 'Screenshot (5).png', 'file_type': 'png', 'file_size': 432.83, 'file_category': 'report', 'uploaded_at': datetime.datetime(2026, 5, 5, 2, 24, 17, 823590), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 07:56:04,817 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column patient_files.file_size does not exist
+LINE 1: ...tient_files.file_type AS patient_files_file_type, patient_fi...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "patient_files.file_type".
+
+[SQL: SELECT patient_files.id AS patient_files_id, patient_files.patient_id AS patient_files_patient_id, patient_files.filename AS patient_files_filename, patient_files.original_name AS patient_files_original_name, patient_files.file_type AS patient_files_file_type, patient_files.file_size AS patient_files_file_size, patient_files.file_category AS patient_files_file_category, patient_files.uploaded_at AS patient_files_uploaded_at, patient_files.uploaded_by AS patient_files_uploaded_by 
+FROM patient_files 
+WHERE patient_files.patient_id = %(patient_id_1)s]
+[parameters: {'patient_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 07:56:11,946 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': '04304fc7-7a12-4d6d-9afa-559ebccd79f6.png', 'original_name': 'Screenshot (6).png', 'file_type': 'png', 'file_size': 440.05, 'file_category': 'report', 'uploaded_at': datetime.datetime(2026, 5, 5, 2, 26, 11, 941067), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 07:59:52,332 - INFO - Fetching patients list
+2026-05-05 07:59:52,347 - INFO - Fetching patients list
+2026-05-05 07:59:55,312 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column patient_files.file_size does not exist
+LINE 1: ...tient_files.file_type AS patient_files_file_type, patient_fi...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "patient_files.file_type".
+
+[SQL: SELECT patient_files.id AS patient_files_id, patient_files.patient_id AS patient_files_patient_id, patient_files.filename AS patient_files_filename, patient_files.original_name AS patient_files_original_name, patient_files.file_type AS patient_files_file_type, patient_files.file_size AS patient_files_file_size, patient_files.file_category AS patient_files_file_category, patient_files.uploaded_at AS patient_files_uploaded_at, patient_files.uploaded_by AS patient_files_uploaded_by 
+FROM patient_files 
+WHERE patient_files.patient_id = %(patient_id_1)s]
+[parameters: {'patient_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 08:00:02,699 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': 'f39da8f3-3a2b-4fc0-b332-481837ba39ec.png', 'original_name': 'Screenshot (5).png', 'file_type': 'png', 'file_size': 432.83, 'file_category': 'report', 'uploaded_at': datetime.datetime(2026, 5, 5, 2, 30, 2, 691255), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 08:04:31,236 - INFO - Fetching patients list
+2026-05-05 08:04:31,236 - INFO - Fetching patients list
+2026-05-05 08:04:33,471 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column patient_files.file_size does not exist
+LINE 1: ...tient_files.file_type AS patient_files_file_type, patient_fi...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "patient_files.file_type".
+
+[SQL: SELECT patient_files.id AS patient_files_id, patient_files.patient_id AS patient_files_patient_id, patient_files.filename AS patient_files_filename, patient_files.original_name AS patient_files_original_name, patient_files.file_type AS patient_files_file_type, patient_files.file_size AS patient_files_file_size, patient_files.file_category AS patient_files_file_category, patient_files.uploaded_at AS patient_files_uploaded_at, patient_files.uploaded_by AS patient_files_uploaded_by 
+FROM patient_files 
+WHERE patient_files.patient_id = %(patient_id_1)s]
+[parameters: {'patient_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 08:04:40,097 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': 'c1df013c-79a2-45eb-ae94-b845ff507589.png', 'original_name': 'Screenshot (4).png', 'file_type': 'png', 'file_size': 459.35, 'file_category': 'report', 'uploaded_at': datetime.datetime(2026, 5, 5, 2, 34, 40, 94313), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 08:05:50,769 - INFO - Fetching patients list
+2026-05-05 08:05:50,790 - INFO - Fetching patients list
+2026-05-05 08:05:52,683 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column patient_files.file_size does not exist
+LINE 1: ...tient_files.file_type AS patient_files_file_type, patient_fi...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "patient_files.file_type".
+
+[SQL: SELECT patient_files.id AS patient_files_id, patient_files.patient_id AS patient_files_patient_id, patient_files.filename AS patient_files_filename, patient_files.original_name AS patient_files_original_name, patient_files.file_type AS patient_files_file_type, patient_files.file_size AS patient_files_file_size, patient_files.file_category AS patient_files_file_category, patient_files.uploaded_at AS patient_files_uploaded_at, patient_files.uploaded_by AS patient_files_uploaded_by 
+FROM patient_files 
+WHERE patient_files.patient_id = %(patient_id_1)s]
+[parameters: {'patient_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 08:05:59,949 - ERROR - Unexpected error: (psycopg2.errors.UndefinedColumn) column "file_size" of relation "patient_files" does not exist
+LINE 1: ... (patient_id, filename, original_name, file_type, file_size,...
+                                                             ^
+
+[SQL: INSERT INTO patient_files (patient_id, filename, original_name, file_type, file_size, file_category, uploaded_at, uploaded_by) VALUES (%(patient_id)s, %(filename)s, %(original_name)s, %(file_type)s, %(file_size)s, %(file_category)s, %(uploaded_at)s, %(uploaded_by)s) RETURNING patient_files.id]
+[parameters: {'patient_id': 1, 'filename': 'be1adaed-2ed3-4696-9489-db254f01c0f8.png', 'original_name': 'Screenshot (1).png', 'file_type': 'png', 'file_size': 101.57, 'file_category': 'report', 'uploaded_at': datetime.datetime(2026, 5, 5, 2, 35, 59, 946815), 'uploaded_by': 'Rakesh'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 08:17:06,160 - INFO - Fetching patients list
+2026-05-05 08:17:06,175 - INFO - Fetching patients list
+2026-05-05 08:17:17,877 - INFO -    Filename: Screenshot (6).png
+2026-05-05 08:17:49,289 - INFO -    Filename: Screenshot (5).png
+2026-05-05 08:20:47,190 - INFO - Root endpoint called
+2026-05-05 08:20:50,668 - INFO - Root endpoint called
+2026-05-05 08:26:15,737 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:17,701 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:18,902 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:19,932 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:20,912 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('newuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:22,020 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('dupuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:23,474 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('loginuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:24,573 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('loginuser2', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:25,479 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('forgotuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:26,359 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('resetuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:27,455 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('resetlogin1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:28,381 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:29,414 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:30,416 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:31,356 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:32,286 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:33,212 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:26:34,236 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:32,563 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:34,269 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:35,680 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:37,042 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:38,467 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('newuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:39,861 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('dupuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:41,160 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('loginuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:42,510 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('loginuser2', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:43,935 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('forgotuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:45,400 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('resetuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:46,884 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('resetlogin1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:48,224 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:49,556 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:50,939 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:52,306 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:53,704 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:55,071 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:29:56,496 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('testadmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:30:36,483 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('newuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:30:37,796 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('dupuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:30:38,728 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('loginuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:30:39,653 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('loginuser2', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:30:40,698 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('forgotuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:30:41,738 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('resetuser1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:30:42,673 - ERROR - Unexpected error: (sqlite3.OperationalError) no such column: users.role
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('resetlogin1', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-05-05 08:32:26,364 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:32:26,991 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:32:27,002 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-05-05 08:32:27,627 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:32:28,128 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:32:28,551 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:32:28,855 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 401 Unauthorized"
+2026-05-05 08:32:29,302 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:32:29,347 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:32:30,011 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:32:30,024 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:32:30,350 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:32:30,780 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:32:30,791 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:32:31,098 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:32:31,390 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:27,081 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:27,500 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:27,506 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-05-05 08:33:27,923 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:28,226 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:28,647 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:28,933 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 401 Unauthorized"
+2026-05-05 08:33:29,350 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:29,362 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:29,770 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:29,779 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:30,083 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:30,481 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:30,492 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:30,782 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:31,071 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:40,138 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:40,437 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:40,469 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:40,496 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:40,532 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:33:40,532 - INFO -    Patient: Patient ID 1
+2026-05-05 08:33:40,532 - INFO -    Date: 2026-12-01 10:00:00
+2026-05-05 08:33:40,534 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:41,022 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:41,300 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:41,312 - INFO - HTTP Request: GET http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:41,732 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:42,010 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:42,033 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:42,048 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:42,062 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:42,078 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:33:42,078 - INFO -    Patient: Patient ID 1
+2026-05-05 08:33:42,078 - INFO -    Date: 2026-12-02 10:00:00
+2026-05-05 08:33:42,080 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:42,104 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:33:42,104 - INFO -    Patient: Patient ID 2
+2026-05-05 08:33:42,104 - INFO -    Date: 2026-12-02 10:30:00
+2026-05-05 08:33:42,106 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:42,848 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:43,127 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:43,147 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:43,160 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:43,175 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:33:43,176 - INFO -    Patient: Patient ID 1
+2026-05-05 08:33:43,176 - INFO -    Date: 2026-12-03 10:00:00
+2026-05-05 08:33:43,178 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:43,200 - INFO - HTTP Request: PUT http://testserver/appointments/1 "HTTP/1.1 200 OK"
+2026-05-05 08:33:43,646 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:44,087 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:44,091 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-05-05 08:33:44,495 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:44,776 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:45,186 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:45,464 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 401 Unauthorized"
+2026-05-05 08:33:45,869 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:45,878 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:46,291 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:46,299 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:46,588 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:47,093 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:47,102 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:47,395 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:33:47,678 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:48,788 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:49,095 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:49,109 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:49,531 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:49,830 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:49,842 - INFO - HTTP Request: GET http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:33:50,255 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:50,533 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:50,538 - WARNING - ratelimit 5 per 1 minute (testclient) exceeded at endpoint: /patients/
+2026-05-05 08:33:50,539 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 429 Too Many Requests"
+2026-05-05 08:33:50,549 - INFO - HTTP Request: GET http://testserver/patients/?name=SearchPatient "HTTP/1.1 200 OK"
+2026-05-05 08:33:50,965 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:51,256 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:51,266 - INFO - HTTP Request: GET http://testserver/patients/?sort_by=name&order=asc "HTTP/1.1 200 OK"
+2026-05-05 08:33:51,699 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:51,981 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:51,995 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-05 08:33:52,389 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:52,674 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:52,679 - WARNING - ratelimit 5 per 1 minute (testclient) exceeded at endpoint: /patients/
+2026-05-05 08:33:52,681 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 429 Too Many Requests"
+2026-05-05 08:33:53,093 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:33:53,371 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:33:53,376 - WARNING - ratelimit 5 per 1 minute (testclient) exceeded at endpoint: /patients/
+2026-05-05 08:33:53,377 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 429 Too Many Requests"
+2026-05-05 08:38:06,379 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:06,811 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:06,848 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:06,876 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:06,930 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:38:06,930 - INFO -    Patient: Patient ID 1
+2026-05-05 08:38:06,931 - INFO -    Date: 2026-12-01 10:00:00
+2026-05-05 08:38:06,933 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:07,419 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:07,718 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:07,735 - INFO - HTTP Request: GET http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:08,189 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:08,477 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:08,491 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:08,507 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:08,520 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:08,538 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:38:08,538 - INFO -    Patient: Patient ID 1
+2026-05-05 08:38:08,539 - INFO -    Date: 2026-12-02 10:00:00
+2026-05-05 08:38:08,541 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:08,549 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 400 Bad Request"
+2026-05-05 08:38:08,963 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:09,246 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:09,258 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:09,271 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:09,288 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:38:09,288 - INFO -    Patient: Patient ID 1
+2026-05-05 08:38:09,288 - INFO -    Date: 2026-12-03 10:00:00
+2026-05-05 08:38:09,290 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:09,306 - INFO - HTTP Request: PUT http://testserver/appointments/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:09,732 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:10,137 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:10,141 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-05-05 08:38:10,564 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:10,845 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:11,287 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:11,572 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 401 Unauthorized"
+2026-05-05 08:38:11,990 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:12,004 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:12,428 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:12,436 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:12,728 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:13,180 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:13,189 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:13,480 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:13,762 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:14,198 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:14,480 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:14,499 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:14,905 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:15,188 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:15,195 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 403 Forbidden"
+2026-05-05 08:38:15,606 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:15,894 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:15,905 - INFO - HTTP Request: GET http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:16,334 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:16,616 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:16,630 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:16,637 - INFO - HTTP Request: GET http://testserver/doctors/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:17,035 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:17,318 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:17,326 - INFO - HTTP Request: GET http://testserver/doctors/99999 "HTTP/1.1 404 Not Found"
+2026-05-05 08:38:17,767 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:18,050 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:18,074 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:18,090 - INFO - HTTP Request: PUT http://testserver/doctors/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:18,543 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:18,822 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:18,850 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:18,866 - INFO - HTTP Request: DELETE http://testserver/doctors/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:19,382 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:19,665 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:19,685 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:19,700 - INFO - HTTP Request: PATCH http://testserver/doctors/1/activate "HTTP/1.1 200 OK"
+2026-05-05 08:38:20,216 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:20,499 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:20,524 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:21,021 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:21,306 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:21,318 - INFO - HTTP Request: GET http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:21,774 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:22,054 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:22,070 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:22,081 - INFO - HTTP Request: GET http://testserver/patients/?name=SearchPatient "HTTP/1.1 200 OK"
+2026-05-05 08:38:22,519 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:22,797 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:22,806 - INFO - HTTP Request: GET http://testserver/patients/?sort_by=name&order=asc "HTTP/1.1 200 OK"
+2026-05-05 08:38:23,236 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:23,518 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:23,525 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-05 08:38:23,985 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:24,267 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:24,287 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:24,302 - INFO - HTTP Request: PUT http://testserver/patients/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:24,733 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:25,014 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:25,027 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:25,040 - INFO - HTTP Request: DELETE http://testserver/patients/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:31,626 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:31,938 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:31,964 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:31,991 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:32,025 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:38:32,025 - INFO -    Patient: Patient ID 1
+2026-05-05 08:38:32,026 - INFO -    Date: 2026-12-01 10:00:00
+2026-05-05 08:38:32,028 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:32,507 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:32,802 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:32,817 - INFO - HTTP Request: GET http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:33,315 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:33,606 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:33,631 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:33,661 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:33,675 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:33,692 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:38:33,693 - INFO -    Patient: Patient ID 1
+2026-05-05 08:38:33,693 - INFO -    Date: 2026-12-02 10:00:00
+2026-05-05 08:38:33,695 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:33,703 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 400 Bad Request"
+2026-05-05 08:38:34,264 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:34,556 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:34,572 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:34,586 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:34,606 - INFO -    Doctor: Doctor ID 1
+2026-05-05 08:38:34,606 - INFO -    Patient: Patient ID 1
+2026-05-05 08:38:34,606 - INFO -    Date: 2026-12-03 10:00:00
+2026-05-05 08:38:34,608 - INFO - HTTP Request: POST http://testserver/appointments/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:34,625 - INFO - HTTP Request: PUT http://testserver/appointments/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:35,046 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:35,571 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:35,576 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-05-05 08:38:36,091 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:36,371 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:36,877 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:37,159 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 401 Unauthorized"
+2026-05-05 08:38:37,676 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:37,690 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:38,211 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:38,232 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:38,546 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:39,044 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:39,059 - INFO - HTTP Request: POST http://testserver/auth/forgot-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:39,369 - INFO - HTTP Request: POST http://testserver/auth/reset-password "HTTP/1.1 200 OK"
+2026-05-05 08:38:39,649 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:40,136 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:40,417 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:40,452 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:41,000 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:41,286 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:41,292 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 403 Forbidden"
+2026-05-05 08:38:41,824 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:42,103 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:42,114 - INFO - HTTP Request: GET http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:42,617 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:42,895 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:42,909 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:42,917 - INFO - HTTP Request: GET http://testserver/doctors/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:43,725 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:44,041 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:44,049 - INFO - HTTP Request: GET http://testserver/doctors/99999 "HTTP/1.1 404 Not Found"
+2026-05-05 08:38:44,596 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:44,907 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:44,932 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:44,954 - INFO - HTTP Request: PUT http://testserver/doctors/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:45,574 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:45,868 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:45,895 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:45,918 - INFO - HTTP Request: DELETE http://testserver/doctors/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:46,486 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:46,802 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:46,826 - INFO - HTTP Request: POST http://testserver/doctors/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:46,853 - INFO - HTTP Request: PATCH http://testserver/doctors/1/activate "HTTP/1.1 200 OK"
+2026-05-05 08:38:47,341 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:47,630 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:47,665 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:48,264 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:48,569 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:48,582 - INFO - HTTP Request: GET http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:49,120 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:49,413 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:49,432 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:49,447 - INFO - HTTP Request: GET http://testserver/patients/?name=SearchPatient "HTTP/1.1 200 OK"
+2026-05-05 08:38:49,942 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:50,269 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:50,286 - INFO - HTTP Request: GET http://testserver/patients/?sort_by=name&order=asc "HTTP/1.1 200 OK"
+2026-05-05 08:38:50,882 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:51,313 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:51,322 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 422 Unprocessable Entity"
+2026-05-05 08:38:52,007 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:52,457 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:52,479 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:52,501 - INFO - HTTP Request: PUT http://testserver/patients/1 "HTTP/1.1 200 OK"
+2026-05-05 08:38:53,139 - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 200 OK"
+2026-05-05 08:38:53,430 - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-05-05 08:38:53,453 - INFO - HTTP Request: POST http://testserver/patients/ "HTTP/1.1 200 OK"
+2026-05-05 08:38:53,473 - INFO - HTTP Request: DELETE http://testserver/patients/1 "HTTP/1.1 200 OK"
+2026-05-05 08:43:43,297 - INFO - Root endpoint called
+2026-05-05 08:43:48,006 - INFO - Root endpoint called
+2026-05-05 08:55:13,829 - INFO -    Doctor: Doctor ID 4
+2026-05-05 08:55:13,830 - INFO -    Patient: Patient ID 2
+2026-05-05 08:55:13,830 - INFO -    Date: 2026-05-06 03:25:00
+2026-05-05 12:08:15,082 - INFO -    Doctor: Doctor ID 4
+2026-05-05 12:08:15,087 - INFO -    Patient: Patient ID 7
+2026-05-05 12:08:15,088 - INFO -    Date: 2026-05-10 06:37:00
+2026-05-05 12:58:14,527 - INFO - Root endpoint called
+2026-05-05 12:58:18,830 - INFO - Root endpoint called
+2026-05-05 13:02:43,751 - ERROR - Unexpected error: (psycopg2.errors.UndefinedTable) relation "users" does not exist
+LINE 2: FROM users 
+             ^
+
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'username_1': 'Rakesh', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 13:07:12,391 - ERROR - Unexpected error: (psycopg2.errors.UndefinedTable) relation "users" does not exist
+LINE 2: FROM users 
+             ^
+
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'username_1': 'Rakesj', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 13:07:40,741 - ERROR - Unexpected error: (psycopg2.errors.UndefinedTable) relation "users" does not exist
+LINE 2: FROM users 
+             ^
+
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.hashed_password AS users_hashed_password, users.role AS users_role, users.reset_token AS users_reset_token, users.reset_token_expiry AS users_reset_token_expiry 
+FROM users 
+WHERE users.username = %(username_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'username_1': 'Rakesh', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-05-05 13:09:04,802 - INFO - Root endpoint called
+2026-05-05 13:09:09,068 - INFO - Root endpoint called
+2026-05-05 13:12:10,472 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:10,480 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:15,331 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:15,340 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:16,373 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:16,378 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:16,604 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:16,613 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:16,862 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:16,869 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:17,087 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:17,093 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:17,311 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:17,317 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:18,406 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:18,414 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:19,649 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:19,656 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:20,863 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:20,870 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:23,406 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:23,414 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:24,347 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:24,364 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:24,972 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:24,978 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:36,165 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:36,174 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:38,320 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:12:38,328 - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /appointments/
+2026-05-05 13:37:49,585 - INFO -    Doctor: Doctor ID 1
+2026-05-05 13:37:49,586 - INFO -    Patient: Patient ID 8
+2026-05-05 13:37:49,586 - INFO -    Date: 2026-05-12 08:07:00
+2026-05-05 13:41:15,520 - INFO -    Doctor: Doctor ID 1
+2026-05-05 13:41:15,523 - INFO -    Patient: Patient ID 2
+2026-05-05 13:41:15,525 - INFO -    Date: 2026-05-06 08:11:00

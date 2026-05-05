@@ -1,87 +1,81 @@
-def test_create_doctor(client, auth_token):
+def test_create_doctor_admin(client, admin_token):
     response = client.post("/doctors/", json={
         "name": "Dr. Test",
         "specialization": "Cardiology",
-        "email": "test@hospital.com",
+        "email": "test1@hospital.com",
         "is_active": True
-    }, headers=auth_token)
+    }, headers=admin_token)
     assert response.status_code == 200
-    assert response.json()["name"] == "Dr. Test"
-    assert response.json()["specialization"] == "Cardiology"
+    assert response.json()["status"] == "success"
 
-def test_get_doctors(client, auth_token):
-    response = client.get("/doctors/", headers=auth_token)
+def test_create_doctor_patient_forbidden(client, patient_token):
+    response = client.post("/doctors/", json={
+        "name": "Dr. Test2",
+        "specialization": "Cardiology",
+        "email": "test2@hospital.com",
+        "is_active": True
+    }, headers=patient_token)
+    assert response.status_code == 403
+
+def test_get_doctors(client, admin_token):
+    response = client.get("/doctors/", headers=admin_token)
     assert response.status_code == 200
-    assert isinstance(response.json(), list)
+    assert "pagination" in response.json()
 
-def test_get_doctor_by_id(client, auth_token):
-    # Create doctor first
+def test_get_doctor_by_id(client, admin_token):
     create = client.post("/doctors/", json={
         "name": "Dr. GetTest",
         "specialization": "Neurology",
-        "email": "gettest@hospital.com",
+        "email": "gettest1@hospital.com",
         "is_active": True
-    }, headers=auth_token)
-    doctor_id = create.json()["id"]
-
-    # Get by ID
-    response = client.get(f"/doctors/{doctor_id}", headers=auth_token)
+    }, headers=admin_token)
+    doctor_id = create.json()["data"]["id"]
+    response = client.get(f"/doctors/{doctor_id}", headers=admin_token)
     assert response.status_code == 200
-    assert response.json()["id"] == doctor_id
 
-def test_get_doctor_not_found(client, auth_token):
-    response = client.get("/doctors/99999", headers=auth_token)
+def test_get_doctor_not_found(client, admin_token):
+    response = client.get("/doctors/99999", headers=admin_token)
     assert response.status_code == 404
 
-def test_update_doctor(client, auth_token):
-    # Create doctor
+def test_update_doctor(client, admin_token):
     create = client.post("/doctors/", json={
         "name": "Dr. Update",
         "specialization": "Dermatology",
-        "email": "update@hospital.com",
+        "email": "update1@hospital.com",
         "is_active": True
-    }, headers=auth_token)
-    doctor_id = create.json()["id"]
-
-    # Update
+    }, headers=admin_token)
+    doctor_id = create.json()["data"]["id"]
     response = client.put(f"/doctors/{doctor_id}", json={
         "name": "Dr. Updated",
         "specialization": "Oncology",
-        "email": "updated@hospital.com",
+        "email": "updated1@hospital.com",
         "is_active": True
-    }, headers=auth_token)
+    }, headers=admin_token)
     assert response.status_code == 200
-    assert response.json()["name"] == "Dr. Updated"
+    assert response.json()["data"]["name"] == "Dr. Updated"
 
-def test_delete_doctor(client, auth_token):
-    # Create doctor
+def test_delete_doctor(client, admin_token):
     create = client.post("/doctors/", json={
         "name": "Dr. Delete",
         "specialization": "Pediatrics",
-        "email": "delete@hospital.com",
+        "email": "delete1@hospital.com",
         "is_active": True
-    }, headers=auth_token)
-    doctor_id = create.json()["id"]
-
-    # Delete
-    response = client.delete(f"/doctors/{doctor_id}", headers=auth_token)
+    }, headers=admin_token)
+    doctor_id = create.json()["data"]["id"]
+    response = client.delete(f"/doctors/{doctor_id}", headers=admin_token)
     assert response.status_code == 200
-    assert response.json()["message"] == "Doctor deleted successfully"
 
-def test_activate_deactivate_doctor(client, auth_token):
-    # Create doctor
+def test_activate_deactivate_doctor(client, admin_token):
     create = client.post("/doctors/", json={
         "name": "Dr. Activate",
         "specialization": "Surgery",
-        "email": "activate@hospital.com",
+        "email": "activate1@hospital.com",
         "is_active": True
-    }, headers=auth_token)
-    doctor_id = create.json()["id"]
-
-    # Toggle activate
+    }, headers=admin_token)
+    doctor_id = create.json()["data"]["id"]
     response = client.patch(
         f"/doctors/{doctor_id}/activate",
-        headers=auth_token
+        headers=admin_token
     )
     assert response.status_code == 200
-    assert response.json()["is_active"] == False
+    assert response.json()["data"]["is_active"] == False

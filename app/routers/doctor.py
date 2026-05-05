@@ -1,79 +1,105 @@
-from fastapi import APIRouter, Depends, HTTPException, Request
+from fastapi import APIRouter, Depends, Request
 from sqlalchemy.orm import Session
 from app.database import get_db
-from app.models.doctor import Doctor
-from app.schemas.doctor import DoctorCreate, DoctorUpdate, DoctorResponse
-from app.logger import logger
+from app.schemas.doctor import DoctorCreate, DoctorUpdate
+from app.services.doctor_service import DoctorService
+from app.utils.response import success_response, paginated_response
+from app.utils.dependencies import require_admin, require_auth
 from app.rate_limit import limiter
-from typing import List, Optional
+from typing import Optional
 
 router = APIRouter(prefix="/doctors", tags=["Doctors"])
 
-# ✅ Max 5 requests per minute for create
-@router.post("/", response_model=DoctorResponse)
+# ✅ Admin only — create
+@router.post("/")
 @limiter.limit("5/minute")
-def create_doctor(request: Request, doctor: DoctorCreate, db: Session = Depends(get_db)):
-    logger.info(f"Creating doctor: {doctor.name}")
-    db_doctor = Doctor(**doctor.model_dump())
-    db.add(db_doctor)
-    db.commit()
-    db.refresh(db_doctor)
-    return db_doctor
+def create_doctor(
+    request: Request,
+    doctor: DoctorCreate,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_admin)
+):
+    db_doctor = DoctorService.create_doctor(db, doctor)
+    return success_response(
+        data=db_doctor,
+        message="Doctor created successfully"
+    )
 
-# ✅ Max 10 requests per minute for listing
-@router.get("/", response_model=List[DoctorResponse])
+# ✅ All logged in users — view
+@router.get("/")
 @limiter.limit("10/minute")
 def get_doctors(
     request: Request,
     specialization: Optional[str] = None,
+    name: Optional[str] = None,
     skip: int = 0,
     limit: int = 10,
-    db: Session = Depends(get_db)
+    sort_by: str = "id",
+    order: str = "asc",
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)  # ← Any logged in user
 ):
-    logger.info("Fetching doctors list")
-    query = db.query(Doctor)
-    if specialization:
-        query = query.filter(Doctor.specialization == specialization)
-    return query.offset(skip).limit(limit).all()
+    doctors, total = DoctorService.get_doctors(
+        db, specialization, name, skip, limit, sort_by, order
+    )
+    return paginated_response(
+        data=doctors,
+        total=total,
+        skip=skip,
+        limit=limit
+    )
 
-@router.get("/{doctor_id}", response_model=DoctorResponse)
+@router.get("/{doctor_id}")
 @limiter.limit("10/minute")
-def get_doctor(request: Request, doctor_id: int, db: Session = Depends(get_db)):
-    doctor = db.query(Doctor).filter(Doctor.id == doctor_id).first()
-    if not doctor:
-        raise HTTPException(status_code=404, detail="Doctor not found")
-    return doctor
+def get_doctor(
+    request: Request,
+    doctor_id: int,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
+):
+    doctor = DoctorService.get_doctor_by_id(db, doctor_id)
+    return success_response(data=doctor)
 
-@router.put("/{doctor_id}", response_model=DoctorResponse)
+# ✅ Admin only — update
+@router.put("/{doctor_id}")
 @limiter.limit("5/minute")
-def update_doctor(request: Request, doctor_id: int, doctor: DoctorUpdate, db: Session = Depends(get_db)):
-    db_doctor = db.query(Doctor).filter(Doctor.id == doctor_id).first()
-    if not db_doctor:
-        raise HTTPException(status_code=404, detail="Doctor not found")
-    for key, value in doctor.model_dump(exclude_unset=True).items():
-        setattr(db_doctor, key, value)
-    db.commit()
-    db.refresh(db_doctor)
-    return db_doctor
+def update_doctor(
+    request: Request,
+    doctor_id: int,
+    doctor: DoctorUpdate,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_admin)
+):
+    db_doctor = DoctorService.update_doctor(db, doctor_id, doctor)
+    return success_response(
+        data=db_doctor,
+        message="Doctor updated successfully"
+    )
 
+# ✅ Admin only — delete
 @router.delete("/{doctor_id}")
 @limiter.limit("5/minute")
-def delete_doctor(request: Request, doctor_id: int, db: Session = Depends(get_db)):
-    doctor = db.query(Doctor).filter(Doctor.id == doctor_id).first()
-    if not doctor:
-        raise HTTPException(status_code=404, detail="Doctor not found")
-    db.delete(doctor)
-    db.commit()
-    return {"message": "Doctor deleted successfully"}
+def delete_doctor(
+    request: Request,
+    doctor_id: int,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_admin)
+):
+    DoctorService.delete_doctor(db, doctor_id)
+    return success_response(message="Doctor deleted successfully")
 
-@router.patch("/{doctor_id}/activate", response_model=DoctorResponse)
+# ✅ Admin only — activate/deactivate
+@router.patch("/{doctor_id}/activate")
 @limiter.limit("5/minute")
-def activate_deactivate_doctor(request: Request, doctor_id: int, db: Session = Depends(get_db)):
-    doctor = db.query(Doctor).filter(Doctor.id == doctor_id).first()
-    if not doctor:
-        raise HTTPException(status_code=404, detail="Doctor not found")
-    doctor.is_active = not doctor.is_active
-    db.commit()
-    db.refresh(doctor)
-    logger.info(f"Doctor {doctor_id} active status: {doctor.is_active}")
-    return doctor
+def toggle_doctor(
+    request: Request,
+    doctor_id: int,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_admin)
+):
+    doctor = DoctorService.toggle_doctor_status(db, doctor_id)
+    status = "activated" if doctor.is_active else "deactivated"
+    return success_response(
+        data=doctor,
+        message=f"Doctor {status} successfully"
+    )

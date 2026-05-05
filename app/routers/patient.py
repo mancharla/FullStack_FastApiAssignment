@@ -1,54 +1,89 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, Request
 from sqlalchemy.orm import Session
 from app.database import get_db
-from app.models.patient import Patient
 from app.schemas.patient import PatientCreate, PatientUpdate, PatientResponse
-from app.logger import logger
-from typing import List, Optional
+from app.services.patient_service import PatientService
+from app.utils.response import success_response, paginated_response
+from app.utils.dependencies import require_auth, require_admin
+from app.rate_limit import limiter
+from typing import Optional
 
 router = APIRouter(prefix="/patients", tags=["Patients"])
 
-@router.post("/", response_model=PatientResponse)
-def create_patient(patient: PatientCreate, db: Session = Depends(get_db)):
-    logger.info(f"Creating patient: {patient.name}")
-    db_patient = Patient(**patient.model_dump())
-    db.add(db_patient)
-    db.commit()
-    db.refresh(db_patient)
-    return db_patient
+@router.post("/")
+@limiter.limit("5/minute")
+def create_patient(
+    request: Request,
+    patient: PatientCreate,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
+):
+    db_patient = PatientService.create_patient(db, patient)
+    return success_response(
+        data=db_patient,
+        message="Patient created successfully"
+    )
 
-@router.get("/", response_model=List[PatientResponse])
+@router.get("/")
+@limiter.limit("10/minute")
 def get_patients(
+    request: Request,
     name: Optional[str] = None,
     phone: Optional[str] = None,
     skip: int = 0,
     limit: int = 10,
-    db: Session = Depends(get_db)
+    sort_by: str = "id",
+    order: str = "asc",
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
 ):
-    logger.info("Fetching patients list")
-    query = db.query(Patient)
-    if name:
-        query = query.filter(Patient.name.ilike(f"%{name}%"))
-    if phone:
-        query = query.filter(Patient.phone == phone)
-    return query.offset(skip).limit(limit).all()
+    patients, total = PatientService.get_patients(
+        db, name, phone, skip, limit, sort_by, order
+    )
+    return paginated_response(
+        data=patients,
+        total=total,
+        skip=skip,
+        limit=limit,
+        message="Patients fetched successfully"
+    )
 
-@router.put("/{patient_id}", response_model=PatientResponse)
-def update_patient(patient_id: int, patient: PatientUpdate, db: Session = Depends(get_db)):
-    db_patient = db.query(Patient).filter(Patient.id == patient_id).first()
-    if not db_patient:
-        raise HTTPException(status_code=404, detail="Patient not found")
-    for key, value in patient.model_dump(exclude_unset=True).items():
-        setattr(db_patient, key, value)
-    db.commit()
-    db.refresh(db_patient)
-    return db_patient
+@router.get("/{patient_id}")
+@limiter.limit("10/minute")
+def get_patient(
+    request: Request,
+    patient_id: int,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
+):
+    patient = PatientService.get_patient_by_id(db, patient_id)
+    return success_response(
+        data=patient,
+        message="Patient fetched successfully"
+    )
+
+@router.put("/{patient_id}")
+@limiter.limit("5/minute")
+def update_patient(
+    request: Request,
+    patient_id: int,
+    patient: PatientUpdate,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
+):
+    db_patient = PatientService.update_patient(db, patient_id, patient)
+    return success_response(
+        data=db_patient,
+        message="Patient updated successfully"
+    )
 
 @router.delete("/{patient_id}")
-def delete_patient(patient_id: int, db: Session = Depends(get_db)):
-    patient = db.query(Patient).filter(Patient.id == patient_id).first()
-    if not patient:
-        raise HTTPException(status_code=404, detail="Patient not found")
-    db.delete(patient)
-    db.commit()
-    return {"message": "Patient deleted successfully"}
+@limiter.limit("5/minute")
+def delete_patient(
+    request: Request,
+    patient_id: int,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
+):
+    PatientService.delete_patient(db, patient_id)
+    return success_response(message="Patient deleted successfully")

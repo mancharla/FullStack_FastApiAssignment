@@ -10,7 +10,9 @@ class Appointment(Base):
     doctor_id = Column(Integer, ForeignKey("doctors.id"), nullable=False)
     patient_id = Column(Integer, ForeignKey("patients.id"), nullable=False)
     appointment_date = Column(DateTime, nullable=False)
-    status = Column(String, default="Scheduled")  # Scheduled / Completed / Cancelled
+    status = Column(String, default="Pending")  # ✅ Default is Pending now
+    notes = Column(String, nullable=True)        # ✅ NEW
+    created_at = Column(DateTime, default=datetime.utcnow)  # ✅ NEW
 
     doctor = relationship("Doctor")
     patient = relationship("Patient")

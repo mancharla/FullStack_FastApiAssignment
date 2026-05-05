@@ -1,114 +1,123 @@
-from fastapi import APIRouter, Depends, HTTPException, Request, BackgroundTasks
+from fastapi import APIRouter, Depends, Request, BackgroundTasks
 from sqlalchemy.orm import Session
 from app.database import get_db
-from app.models.appointment import Appointment
-from app.models.doctor import Doctor
-from app.models.patient import Patient
-from app.schemas.appointment import AppointmentCreate, AppointmentUpdate, AppointmentResponse
+from app.schemas.appointment import AppointmentCreate, AppointmentUpdate
+from app.services.appointment_service import AppointmentService
 from app.websockets import manager
 from app.rate_limit import limiter
-from app.tasks import send_appointment_notification, cleanup_cancelled_appointment
-from typing import List, Optional
+from app.tasks import send_appointment_notification
+from app.utils.response import success_response, paginated_response
+from app.utils.dependencies import require_auth
+from typing import Optional
 
 router = APIRouter(prefix="/appointments", tags=["Appointments"])
 
-@router.post("/", response_model=AppointmentResponse)
+@router.post("/")
 @limiter.limit("5/minute")
 async def create_appointment(
     request: Request,
     appointment: AppointmentCreate,
     background_tasks: BackgroundTasks,
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
 ):
-    # ✅ Get doctor and patient names
-    doctor = db.query(Doctor).filter(Doctor.id == appointment.doctor_id).first()
-    patient = db.query(Patient).filter(Patient.id == appointment.patient_id).first()
+    db_appointment = AppointmentService.create_appointment(db, appointment)
 
-    if not doctor:
-        raise HTTPException(status_code=404, detail="Doctor not found")
-    if not patient:
-        raise HTTPException(status_code=404, detail="Patient not found")
-
-    # ✅ Create appointment
-    db_appointment = Appointment(**appointment.model_dump())
-    db.add(db_appointment)
-    db.commit()
-    db.refresh(db_appointment)
-
-    # ✅ Send notification in background
     background_tasks.add_task(
         send_appointment_notification,
-        doctor_name=doctor.name,
-        patient_name=patient.name,
+        doctor_name=f"Doctor ID {appointment.doctor_id}",
+        patient_name=f"Patient ID {appointment.patient_id}",
         date=str(appointment.appointment_date)
     )
 
-    # ✅ Notify via WebSocket
     await manager.broadcast(
         f"🔔 New appointment booked! "
-        f"Doctor: {doctor.name} "
-        f"Patient: {patient.name} "
-        f"Date: {appointment.appointment_date}"
+        f"Doctor ID: {appointment.doctor_id} "
+        f"Patient ID: {appointment.patient_id}"
     )
 
-    return db_appointment
+    return success_response(
+        data=db_appointment,
+        message="Appointment created successfully"
+    )
 
-@router.get("/", response_model=List[AppointmentResponse])
+@router.get("/")
 @limiter.limit("10/minute")
 def get_appointments(
     request: Request,
     doctor_id: Optional[int] = None,
     patient_id: Optional[int] = None,
-    db: Session = Depends(get_db)
+    status: Optional[str] = None,
+    date: Optional[str] = None,
+    skip: int = 0,
+    limit: int = 10,
+    sort_by: str = "appointment_date",
+    order: str = "asc",
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
 ):
-    query = db.query(Appointment)
-    if doctor_id:
-        query = query.filter(Appointment.doctor_id == doctor_id)
-    if patient_id:
-        query = query.filter(Appointment.patient_id == patient_id)
-    return query.all()
+    appointments, total = AppointmentService.get_appointments(
+        db, doctor_id, patient_id, status, date, skip, limit, sort_by, order
+    )
+    return paginated_response(
+        data=appointments,
+        total=total,
+        skip=skip,
+        limit=limit,
+        message="Appointments fetched successfully"
+    )
 
-@router.get("/{appointment_id}", response_model=AppointmentResponse)
+@router.get("/{appointment_id}")
 @limiter.limit("10/minute")
 def get_appointment(
     request: Request,
     appointment_id: int,
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
 ):
-    appointment = db.query(Appointment).filter(
-        Appointment.id == appointment_id
-    ).first()
-    if not appointment:
-        raise HTTPException(status_code=404, detail="Appointment not found")
-    return appointment
+    appointment = AppointmentService.get_appointment_by_id(
+        db, appointment_id
+    )
+    return success_response(data=appointment)
 
-@router.put("/{appointment_id}/cancel", response_model=AppointmentResponse)
+@router.put("/{appointment_id}")
+@limiter.limit("5/minute")
+async def update_appointment(
+    request: Request,
+    appointment_id: int,
+    data: AppointmentUpdate,
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
+):
+    appointment = AppointmentService.update_appointment(
+        db, appointment_id, data
+    )
+
+    await manager.broadcast(
+        f"📋 Appointment {appointment_id} "
+        f"status updated to: {appointment.status}"
+    )
+
+    return success_response(
+        data=appointment,
+        message=f"Appointment updated successfully"
+    )
+
+@router.put("/{appointment_id}/cancel")
 @limiter.limit("5/minute")
 async def cancel_appointment(
     request: Request,
     appointment_id: int,
-    background_tasks: BackgroundTasks,
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_db),
+    current_user = Depends(require_auth)
 ):
-    appointment = db.query(Appointment).filter(
-        Appointment.id == appointment_id
-    ).first()
-    if not appointment:
-        raise HTTPException(status_code=404, detail="Appointment not found")
+    appointment = AppointmentService.cancel_appointment(db, appointment_id)
 
-    appointment.status = "Cancelled"
-    db.commit()
-    db.refresh(appointment)
-
-    # ✅ Cleanup in background
-    background_tasks.add_task(
-        cleanup_cancelled_appointment,
-        appointment_id=appointment_id
-    )
-
-    # ✅ Notify via WebSocket
     await manager.broadcast(
         f"❌ Appointment {appointment_id} has been cancelled!"
     )
 
-    return appointment
+    return success_response(
+        data=appointment,
+        message="Appointment cancelled successfully"
+    )

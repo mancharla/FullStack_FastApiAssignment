@@ -1,29 +1,62 @@
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from app.database import get_db
-from app.models.user import User
-from app.schemas.user import UserCreate, UserLogin, TokenResponse
-from app.auth import hash_password, verify_password, create_access_token
+from app.schemas.user import (
+    UserCreate, UserLogin,
+    ForgotPasswordRequest, ResetPasswordRequest
+)
+from app.services.auth_service import AuthService
+from app.utils.response import success_response
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 @router.post("/register")
 def register(user: UserCreate, db: Session = Depends(get_db)):
-    existing = db.query(User).filter(User.username == user.username).first()
-    if existing:
-        raise HTTPException(status_code=400, detail="Username already exists")
-    new_user = User(
+    AuthService.register_user(
+        db,
         username=user.username,
-        hashed_password=hash_password(user.password)
+        password=user.password,
+        role=user.role
     )
-    db.add(new_user)
-    db.commit()
-    return {"message": "User registered successfully"}
+    return success_response(message="User registered successfully")
 
-@router.post("/login", response_model=TokenResponse)
+# ✅ This format works perfectly with Swagger Authorize button
+@router.post("/login")
 def login(user: UserLogin, db: Session = Depends(get_db)):
-    db_user = db.query(User).filter(User.username == user.username).first()
-    if not db_user or not verify_password(user.password, db_user.hashed_password):
-        raise HTTPException(status_code=401, detail="Invalid credentials")
-    token = create_access_token(data={"sub": db_user.username})
-    return {"access_token": token, "token_type": "bearer"}
+    data = AuthService.login_user(db, user.username, user.password)
+    return {
+        "access_token": data["access_token"],
+        "token_type": "bearer",
+        "role": data["role"],
+        "status": "success",
+        "message": "Login successful"
+    }
+
+# ✅ Forgot password
+@router.post("/forgot-password")
+def forgot_password(
+    request: ForgotPasswordRequest,
+    db: Session = Depends(get_db)
+):
+    data = AuthService.forgot_password(db, request.username)
+    return success_response(
+        data=data,
+        message="Reset token generated successfully"
+    )
+
+# ✅ Reset password
+@router.post("/reset-password")
+def reset_password(
+    request: ResetPasswordRequest,
+    db: Session = Depends(get_db)
+):
+    data = AuthService.reset_password(
+        db,
+        token=request.token,
+        new_password=request.new_password
+    )
+    return success_response(
+        data=data,
+        message="Password reset successful"
+    )
